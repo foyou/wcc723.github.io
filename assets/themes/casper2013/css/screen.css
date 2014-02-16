@@ -288,7 +288,7 @@ a {
   color: #00a0e9;
   text-decoration: none;
 }
-.section a {
+.section article > a {
   display: inline-block;
   padding-bottom: 0.3px;
   border-bottom: transparent 1px solid;
@@ -297,7 +297,7 @@ a {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-.section a:hover {
+.section article > a:hover {
   padding-bottom: 0.3px;
   border-bottom: #00a0e9 1px solid;
 }
