@@ -54,20 +54,73 @@ Just font中的字型學文章都相當有意思，而有一篇是關於[中英�
 
 	@font-face
 		font-family: custom-Iam
-		src: local(Heiti TC), local("微軟正黑體"), local("Microsoft JhengHei")
+		src: local("Heiti TC"), local("微軟正黑體"), local("Microsoft JhengHei")
 		unicode-range: U+6211
 
 	.custom-Iam
 		font-family: custom-Iam
 
+## 針對指定語系設定
 
+在一般來說，通常換字體沒有針對語系，就像下方這一個範例，我將字體換成了'Mac OS 黑體-繁'、'Windows 微軟正黑體'，但在中英文排版中，用同一種字體不一定合適(請看just font)。
 
+<div class="demo d0218">
+	<div class="custom-Heiti">	
+		This is 一個中文English交雜的sentence
+	</div>
+</div>
 
+中文的語系的unicode-range為`U+4E00-9FFF`，英語系為`U+00-024F`，將這個值加入到@font-face內，就能為特定語系換字體。如下範例中文還是'Mac OS 黑體-繁'、'Windows 微軟正黑體'，但英文的部份已經替換成'Helvetica'、'Segoe UI'，範例如下。
 
+<div class="demo d0218">
+	<div class="custom-sans-serif">	
+		This is 一個中文English交雜的sentence
+	</div>
+</div>
 
+在css內只要將兩者的font-family皆設定相同名稱，但指向不同的`unicode-range`，就可以達到這樣的效果。
 
+	@font-face
+		font-family: custom-sans-serif
+		src: local("Heiti TC"), local("微軟正黑體"), local("Microsoft JhengHei")
+		unicode-range: U+4E00-9FFF
 
+	@font-face
+		font-family: custom-sans-serif
+		src: local(Helvetica), local(Segoe UI) 
+		unicode-range: U+00-024F
+	
+	.custom-sans-serif
+		font-family: custom-sans-serif
 
+## 其他範例
 
+不只在黑體能夠這樣做，明體當然也可以。
 
+<div class="demo d0218">
+	<div class="custom-serif">	
+		This is 一個中文English交雜的sentence
+	</div>
+</div>
+	
+	@font-face
+		font-family: custom-serif
+		src: local("LiSong Pro"), local("新細明體"), local("PMingLiU")
+		unicode-range: U+4E00-9FFF
+
+	@font-face
+		font-family: custom-serif
+		src: local(Times), local(Garamond)
+		unicode-range: U+00-024F
+
+	.custom-serif
+		font-family: custom-serif
+
+## 延伸發現
+
+在(字符百科)[http://unicode-table.com/cn/]中，不僅可以查詢的文字的unicode 編號，其實還可以查到許多符號性的文字，這些文字其實可以直接當作web font使用，還免載入外部的字型檔，就像下方的幾個不同雪花一樣。
+
+<div class="demo d0218">
+	❄❅❆
+</div>
 
