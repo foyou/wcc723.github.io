@@ -116,7 +116,7 @@ Just font中的字型學文章都相當有意思，而有一篇是關於[中英�
 
 	@font-face
 		font-family: custom-serif
-		src: local(Times), local(Garamond)
+		src: local(Times), local(Times New Roman)
 		unicode-range: U+00-024F
 
 	.custom-serif
