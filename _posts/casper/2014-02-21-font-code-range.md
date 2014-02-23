@@ -6,12 +6,12 @@ tagline: CSS3 unicode-range
 tags: [css, sass]
 cssdemo: 2014-spring
 thumbnail: 
-published: false
+published: true
 ---
 
 
 
-Just font中的字型學文章都相當有意思，而有一篇是關於[中英文字搭配](http://blog.justfont.com/2013/12/popular-typography)的問題；其中一段"以 Windows 內建的三種字型為例，表現最好的是微軟正黑體，英文部分採用了微軟的 Segoe UI，粗細與中文較一致"，在目前web中當然也可以有這樣的設定，在中文字中套用"微軟正黑體"，英文套用"Segoe UI"，用的就是`unicode-range`。
+Just font中的字型學文章都相當有意思，而有一篇是關於[中英文字搭配](http://blog.justfont.com/2013/12/popular-typography)的問題；這篇雖然是以windows word為例，但裡面的概念在網頁上也是很有幫助，而其中一段"*以 Windows 內建的三種字型為例，表現最好的是微軟正黑體，英文部分採用了微軟的 Segoe UI，粗細與中文較一致*"，在目前web中當然也可以有這樣的設定，只要用CSS3的`unicode-range`，就能夠在中文字中套用"微軟正黑體"，英文套用"Segoe UI"。
 
 <!-- more -->
 #### 本篇參考
@@ -33,6 +33,8 @@ Just font中的字型學文章都相當有意思，而有一篇是關於[中英�
 		這一句話只有"我"會被換成黑體
 	</div>
 </div>
+
+![](/images/2014-02-23_180951.png)
 
 以上面這一段文字為例，在windows內，"我"這一個文字會被替換成微軟正黑體，而其他文字沒有變化。
 
@@ -70,6 +72,8 @@ Just font中的字型學文章都相當有意思，而有一篇是關於[中英�
 	</div>
 </div>
 
+![](/images/2014-02-23_182250.png)
+
 中文的語系的unicode-range為`U+4E00-9FFF`，英語系為`U+00-024F`，將這個值加入到@font-face內，就能為特定語系換字體。如下範例中文還是'Mac OS 黑體-繁'、'Windows 微軟正黑體'，但英文的部份已經替換成'Helvetica'、'Segoe UI'，範例如下。
 
 <div class="demo d0218">
@@ -77,6 +81,8 @@ Just font中的字型學文章都相當有意思，而有一篇是關於[中英�
 		This is 一個中文English交雜的sentence
 	</div>
 </div>
+
+![](/images/2014-02-23_182302.png)
 
 在css內只要將兩者的font-family皆設定相同名稱，但指向不同的`unicode-range`，就可以達到這樣的效果。
 
