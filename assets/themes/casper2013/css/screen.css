@@ -679,6 +679,18 @@ article {
   *zoom: 1;
   *overflow: hidden;
 }
+article blockquote {
+  margin: 0 0 15px;
+  padding: 0 0 0 15px;
+  border-left: 5px solid #cccccc;
+}
+article blockquote p, article blockquote ul, article blockquote ol {
+  margin-bottom: 0;
+  color: #555555;
+}
+article blockquote small, article blockquote em {
+  color: #999999;
+}
 article img, article iframe {
   max-width: 100%;
 }
