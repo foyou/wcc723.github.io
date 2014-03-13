@@ -135,3 +135,116 @@
 .d0218 .custom-sans-serif {
   font-family: custom-sans-serif;
 }
+
+.icons1-sprite, .icons1-mobile, .icons1-nice, .icons1-phone, .icons1-setting {
+  background: url('/images/icons1-s85e9ac7815.png') no-repeat;
+}
+
+.icons1-mobile {
+  background-position: 0 -137px;
+  height: 49px;
+  width: 30px;
+}
+
+.icons1-nice {
+  background-position: 0 -45px;
+  height: 50px;
+  width: 44px;
+}
+
+.icons1-phone {
+  background-position: 0 -96px;
+  height: 40px;
+  width: 40px;
+}
+
+.icons1-setting {
+  background-position: 0 0;
+  height: 44px;
+  width: 47px;
+}
+
+.icons-sprite, .icons-mobile, .icons-nice, .icons-phone, .icons-setting {
+  background: url('/images/icons-s2e0fdaa50a.png') no-repeat;
+}
+
+.icons-mobile {
+  background-position: 0 -137px;
+  height: 49px;
+  width: 30px;
+}
+
+.icons-nice {
+  background-position: 0 -45px;
+  height: 50px;
+  width: 44px;
+}
+
+.icons-phone {
+  background-position: 0 -96px;
+  height: 40px;
+  width: 40px;
+}
+
+.icons-setting {
+  background-position: 0 0;
+  height: 44px;
+  width: 47px;
+}
+
+.icons2x-sprite, .icons2x-mobile, .icons2x-nice, .icons2x-phone, .icons2x-setting {
+  background: url('/images/icons2x-s14e8587cd4.png') no-repeat;
+}
+
+.icons2x-mobile {
+  background-position: 0 -268px;
+  height: 98px;
+  width: 59px;
+}
+
+.icons2x-nice {
+  background-position: 0 -88px;
+  height: 99px;
+  width: 87px;
+}
+
+.icons2x-phone {
+  background-position: 0 -188px;
+  height: 79px;
+  width: 79px;
+}
+
+.icons2x-setting {
+  background-position: 0 0;
+  height: 87px;
+  width: 93px;
+}
+
+@media (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .icons-all-retina-sprites, .icons-mobile, .icons-nice, .icons-phone, .icons-setting {
+    background-image: url('/images/icons2x-s14e8587cd4.png');
+    -webkit-background-size: 47px auto;
+    -moz-background-size: 47px auto;
+    -o-background-size: 47px auto;
+    background-size: 47px auto;
+  }
+
+  .icons-mobile {
+    background-position: 0 -134px;
+  }
+
+  .icons-nice {
+    background-position: 0 -44px;
+  }
+
+  .icons-phone {
+    background-position: 0 -94px;
+  }
+
+  .icons-setting {
+    background-position: 0 0;
+  }
+}
+.d0311 [class*="icons"] {
+  display: inline-block;
+}
