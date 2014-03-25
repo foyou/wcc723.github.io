@@ -1,6 +1,6 @@
 ---
 layout: post
-cTitle: Sprits for Retina
+cTitle: Sprites for Retina
 category: CSS
 tagline: 
 tags: [css, sass]
@@ -56,7 +56,7 @@ Hlb的簡報有介紹，本篇也是參考此簡報做的。
 	//製作成retina款式
 	@include all-retina-sprites($icons-sprites, $icons2x-sprites)
 
-接下來會出現兩種size的png sprites。
+接下來會產生兩種size的png sprites。
 
 #### 普通size
 
@@ -69,14 +69,14 @@ Hlb的簡報有介紹，本篇也是參考此簡報做的。
 
 ## 使用
 
-其實用法和上一篇一模一樣，透過css media會自己判斷裝置是要用哪種icons sprites，以下有兩個demo，有retina裝置的使用者不妨看看兩者之間的差異吧~(一般螢幕兩者看到的會一樣)。
+其實用法和上一篇一模一樣，透過css media會判斷裝置是要用哪種icons sprites，以下有兩個demo，有retina裝置的使用者不妨看看兩者之間的差異吧~(一般螢幕兩者看到的會一樣)。
 
 	<div class="icons-mobile"> </div>
 	<div class="icons-phone"> </div>
 	<div class="icons-nice"> </div>
 	<div class="icons-setting"> </div>
 
-#### 一般Sprites
+#### 一般 Sprites
 
 <div class="demo d0311">
 
