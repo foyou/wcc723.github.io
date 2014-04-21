@@ -1,0 +1,51 @@
+
+%clearFix
+	*zoom: 1
+	*overflow: hidden
+	&:after
+		content: " "
+		display: table
+		clear: both
+		visibility: hidden
+		
+@mixin clearFix()
+	@extend %clearFix
+
+@mixin fontFace ($fontName: Muli-Regular)
+	$fontsPath: "fonts/"
+	@font-face
+		font-family: $fontName
+		src: url($fontsPath+$fontName+".ttf") 
+
+@mixin bg($name) 
+	background: image-url("#{$name}")
+	width: image-width("#{$name}")
+	height: image-height("#{$name}")
+
+@mixin svgbg($icon: reload) 
+	@extend %svgbg
+	background-image: image-url("#{$icon}.png")
+	width: image-width("#{$icon}.png")
+	height: image-height("#{$icon}.png")
+	&.svg
+		background-image: image-url("#{$icon}.svg")
+		background-image: image-url("#{$icon}.png")\9
+		
+=keyframes($name)
+	@-webkit-keyframes #{$name}
+		@content
+	@-moz-keyframes #{$name}
+		@content
+	@-ms-keyframes #{$name}
+		@content
+	@keyframes #{$name}
+		@content
+
+=animation($content)
+	-webkit-animation: $content
+	-moz-animation: $content
+	-o-animation: $content
+	animation: $content
+
+
+	

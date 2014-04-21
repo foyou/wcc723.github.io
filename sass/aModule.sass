@@ -1,0 +1,246 @@
+@import module.sass
+@charset "utf-8"
+$imagePath: "../images/"
+$grid-padding: 10px
+
+//+fontFace  
+
+
++tpl()
++tpl(green,tpl2)
+//layout
+//html, body, input, button, select, textarea, a
+//	font-family: Arial
+//	font-size: $fontSize
+//html, body
+//	//font-size: $fontSize
+//	//*font-size: $fontSize +1px
+//	
+//	line-height: $lineheight
+//	color: $fontColor
+//	word-break: break-all
+//	word-wrap: break-word
+//	//background: url(../images/agsquare.png)
+//	@extend %heading
+
+//header
+//header	
+//	height: 150px
+//	background: $fontColor
+//	color: #fff
+//	div
+//		margin: 0 auto
+//		height: 100%
+//		position: relative
+h2.atitle
+	color: $defaultColorBlue
+	border-bottom: 1px solid $defaultColorBlue
+//.mainMenu
+//	position: absolute
+//	right: 0
+//	bottom: 0
+//	text-align: right
+//	li
+//		display: inline-block
+//		margin-left: 12px
+//		a
+//			padding: 6px 12px
+//			background: rgba(255,255,255,0.1)
+//			color: #fff
+//			+transition(all,0.3s)
+//			&:hover,&:focus
+//				background: rgba(255,255,255,0.3)
+//header end
+
+//layout start
+hr
+	+hr
+	width: 100%
+
+.example
+	p
+		margin-top: 0
+//+Paragraphs
+
+pre
+	background: #777
+	background: rgba(black, .8)
+	padding: $grid-padding
+	margin-bottom: 1em
+	color: white
+	+border-radius(5px)
+	+box-shadow(rgba(black, .6) 0 0 5px inset)
+
+.clearFix
+	+clearFix
+
+aside
+	nav
+		position: relative
+		z-index: 15
+
+.navMenu
+	+aMenu()
+	width: 100%
+
+footer
+	width: 100%
+	min-height: 100px
+	background: #eee
+	border-top: #ccc 1px solid
+//layout end
+
+
+//code
+//	+code
+//
+//abbr
+//	+abbr
+//
+//blockquote.normal
+//	+blockquote
+//
+//blockquote.right
+//	+blockquote($textAlign: right)
+//
+//.container
+//	//margin: 20px auto
+//	//+baseline-grid-background
+//
+.fluidGridDemo
+	+fluidGrid
+	div[class*="col"]
+		background-color: #ccc
+		text-align: center
+		+border-radius(3px)
+		+clearFix
+		height: 40px
+		line-height: 40px
+		+transition(all,0.3s)
+		&:hover
+			background-color: #999
+			color: #fff
+.gridDemo
+	+grid
+	.container
+		background-color: #eee
+		padding: 8px 0 0 0 
+	div[class*="col"]
+		background-color: #ccc
+		text-align: center
+		+border-radius(3px)
+		+clearFix
+		height: 40px
+		line-height: 40px
+		+transition(all,0.3s)
+		&:hover
+			background-color: #999
+			color: #fff
+//
+//.sass
+//	+sassCode
+//.javascript
+//	+sassCode("javascript")
+//.example
+//	+example
+//	z-index: 1
+//
+//ul.ullist
+//	+ullist
+//ul.ullist2
+//	+ullist(square)
+//
+//ol.ollist
+//	+ullist(upper-roman,lower-roman)
+//
+//dl.normal
+//	+dlList
+//dl.horizontal
+//	+dlHorizontal
+//
+//.cubicButton
+//	+cubicButton()
+//.cubicButton2
+//	+cubicButton($defaultColorRed)
+//
+//.aForms
+//	+aForms
+//	+aButton
+//
+//
+//+aButton($color: #00CC91, $className: "success")
+//
+//.divider
+//	+divider	
+//
+//table.table,.atablelight,.atableLight
+//	+atableLight
+//	margin-bottom: 15px
+//table.table2
+//	+atableLight(4px,#ffffcc,center)
+//	margin-bottom: 15px
+//
+//.cabinet
+//	+cabinet
+//.sizeRelative
+//	float: left
+//	margin: 10px
+//	background-color: #000
+//	+sizeRelative
+//.imgStack
+//	+imgStack
+//.imgStack2
+//	+imgStack(twisted)
+//.imgStack3
+//	+imgStack(rotated-left)
+//
+//.buttonColor
+//	+clearFix
+//	+colorfullButton
+//.buttonFlat
+//	+clearFix
+//	+colorFlatButton	
+//.turn180
+//	+turn180
+//	img
+//		width: 100%
+//
+//.motionInput
+//	+motionInput()
+//
+//.textureWove
+//	+textureWove
+//
+//+ios7checkbox
+//
+//.paperShadow
+//	width: 80%
+//	margin: 0 auto 10px
+//	height: 100px	
+//	background: #fff
+//	border: dashed 1px #ccc
+//	+paperShadow()
+//	
+//.nomargin
+//	margin: 0
+//
+////jquery
+//.a_banner
+//	+aBanner
+//	
+//
+//
+//
+////demo page
+//.the-icons li 
+//	float: left
+//	width: 25%
+//	line-height: 25px
+//
+//
+//
+//
+//
+//@media (max-width: 767px)
+//	.navMenu
+//		display: none//

@@ -1,5 +1,5 @@
 
-css_dir = "stylesheets" # by Fire.app 
+css_dir = "demoFile/css" # by Fire.app 
 sass_dir = "sass" # by Fire.app 
 images_dir = "images" # by Fire.app 
 javascripts_dir = "javascripts" # by Fire.app 
