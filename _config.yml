@@ -132,3 +132,4 @@ JB :
   
 
   paginate: 10
+  markdown: kramdown
