@@ -248,3 +248,36 @@
 .d0311 [class*="icons"] {
   display: inline-block;
 }
+
+.drop-menu {
+  max-width: 300px;
+}
+.drop-menu label {
+  display: block;
+  border: 1px solid #cccccc;
+  padding: 6px;
+  cursor: pointer;
+}
+.drop-menu input {
+  display: none;
+}
+.drop-menu .menu-list {
+  background-color: white;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: max-height 0.3s;
+  -moz-transition: max-height 0.3s;
+  -o-transition: max-height 0.3s;
+  transition: max-height 0.3s;
+}
+.drop-menu .menu-list a {
+  display: block;
+  padding: 4px;
+  border-bottom: 1px dashed #cccccc;
+}
+.drop-menu input:checked + .menu-list {
+  max-height: 300px;
+}
