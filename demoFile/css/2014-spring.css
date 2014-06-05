@@ -1,4 +1,64 @@
 @charset "UTF-8";
+@-webkit-keyframes infinite-rotate {
+  from {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes infinite-rotate {
+  from {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-ms-keyframes infinite-rotate {
+  from {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes infinite-rotate {
+  from {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 .d0214 .btn-default, .d0214 .demo-btn, .d0214 .demo-btn.Validation, .d0214 .demo-btn.Error, .d0214 .demo-btn.Warning, .d0214 .demo-btn.Information {
   text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
   text-decoration: none;
@@ -298,4 +358,21 @@
 }
 .d0524.vertical div {
   display: inline-block;
+}
+
+.d0605 svg {
+  stroke-width: 1px;
+  stroke: url(#myGradient);
+  fill: none;
+  -moz-transition: stroke-width 0.5s;
+  -o-transition: stroke-width 0.5s;
+  -webkit-transition: stroke-width 0.5s;
+  transition: stroke-width 0.5s;
+}
+.d0605 svg:hover {
+  stroke-width: 4px;
+  -webkit-animation: infinite-rotate 1s infinite linear;
+  -moz-animation: infinite-rotate 1s infinite linear;
+  -o-animation: infinite-rotate 1s infinite linear;
+  animation: infinite-rotate 1s infinite linear;
 }
