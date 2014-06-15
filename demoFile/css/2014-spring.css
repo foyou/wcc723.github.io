@@ -376,3 +376,61 @@
   -o-animation: infinite-rotate 1s infinite linear;
   animation: infinite-rotate 1s infinite linear;
 }
+
+.d0615 svg {
+  width: 100%;
+  stroke: black;
+  stroke-width: 1px;
+  fill: none;
+}
+.d0615 line {
+  stroke-dasharray: 60;
+}
+.d0615 line.l2 {
+  stroke-dashoffset: 40;
+}
+.d0615 line.l3 {
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+}
+.d0615 .stroke {
+  stroke-dashoffset: 2000;
+  stroke-dasharray: 2000;
+}
+.d0615 .stroke circle:nth-child(2n) {
+  -moz-transform-origin: center 50%;
+  -ms-transform-origin: center 50%;
+  -webkit-transform-origin: center 50%;
+  transform-origin: center 50%;
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.d0615 .ani {
+  -webkit-animation: circle-draw 10s linear infinite;
+  -moz-animation: circle-draw 10s linear infinite;
+  -o-animation: circle-draw 10s linear infinite;
+  animation: circle-draw 10s linear infinite;
+}
+
+@-webkit-keyframes circle-draw {
+  80% {
+    stroke-dashoffset: 0;
+  }
+}
+@-moz-keyframes circle-draw {
+  80% {
+    stroke-dashoffset: 0;
+  }
+}
+@-ms-keyframes circle-draw {
+  80% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes circle-draw {
+  80% {
+    stroke-dashoffset: 0;
+  }
+}
