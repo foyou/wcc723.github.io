@@ -190,7 +190,7 @@
 }
 
 .icons1-sprite, .icons1-mobile, .icons1-nice, .icons1-phone, .icons1-setting {
-  background-image: url('/images/icons1-saf4f164f25.png');
+  background-image: url('/images/icons1-s0e87280079.png');
   background-repeat: no-repeat;
 }
 
@@ -201,25 +201,25 @@
 }
 
 .icons1-nice {
-  background-position: 0 -50px;
+  background-position: 0 -52px;
   height: 50px;
   width: 44px;
 }
 
 .icons1-phone {
-  background-position: 0 -101px;
+  background-position: 0 -105px;
   height: 40px;
   width: 40px;
 }
 
 .icons1-setting {
-  background-position: 0 -142px;
+  background-position: 0 -148px;
   height: 44px;
   width: 47px;
 }
 
 .icons-sprite, .icons-mobile, .icons-nice, .icons-phone, .icons-setting {
-  background-image: url('/images/icons-s0e89e74bfa.png');
+  background-image: url('/images/icons-sacadfe5086.png');
   background-repeat: no-repeat;
 }
 
@@ -230,25 +230,25 @@
 }
 
 .icons-nice {
-  background-position: 0 -50px;
+  background-position: 0 -53px;
   height: 50px;
   width: 44px;
 }
 
 .icons-phone {
-  background-position: 0 -101px;
+  background-position: 0 -107px;
   height: 40px;
   width: 40px;
 }
 
 .icons-setting {
-  background-position: 0 -142px;
+  background-position: 0 -151px;
   height: 44px;
   width: 47px;
 }
 
 .icons2x-sprite, .icons2x-mobile, .icons2x-nice, .icons2x-phone, .icons2x-setting {
-  background-image: url('/images/icons2x-s496fd2002c.png');
+  background-image: url('/images/icons2x-sa106106d92.png');
   background-repeat: no-repeat;
 }
 
@@ -259,26 +259,26 @@
 }
 
 .icons2x-nice {
-  background-position: 0 -99px;
+  background-position: 0 -102px;
   height: 99px;
   width: 87px;
 }
 
 .icons2x-phone {
-  background-position: 0 -199px;
+  background-position: 0 -205px;
   height: 79px;
   width: 79px;
 }
 
 .icons2x-setting {
-  background-position: 0 -279px;
+  background-position: 0 -288px;
   height: 87px;
   width: 93px;
 }
 
 @media (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .icons-all-retina-sprites, .icons-mobile, .icons-nice, .icons-phone, .icons-setting {
-    background-image: url('/images/icons2x-s496fd2002c.png');
+    background-image: url('/images/icons2x-sa106106d92.png');
     -moz-background-size: 47px auto;
     -o-background-size: 47px auto;
     -webkit-background-size: 47px auto;
@@ -290,15 +290,15 @@
   }
 
   .icons-nice {
-    background-position: 0 -49.5px;
+    background-position: 0 -51px;
   }
 
   .icons-phone {
-    background-position: 0 -99.5px;
+    background-position: 0 -102.5px;
   }
 
   .icons-setting {
-    background-position: 0 -139.5px;
+    background-position: 0 -144px;
   }
 }
 .d0311 [class*="icons"] {
