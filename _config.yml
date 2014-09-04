@@ -134,3 +134,6 @@ JB :
 
   paginate: 10
   markdown: kramdown
+
+  sass:
+    sass_dir: sass
