@@ -4,12 +4,15 @@
 
     headerHeigth = $('.header').height();
     navHeight = $('.navigation').height();
-    return $win = $(window).scroll(function() {
+    $win = $(window).scroll(function() {
       if ($win.scrollTop() > (headerHeigth - navHeight)) {
         return $('.navigation').addClass('small');
       } else {
         return $('.navigation').removeClass('small');
       }
+    });
+    return $('.main-menu-btn').on('click', function() {
+      return $('.main-menu').toggleClass('menu-show');
     });
   });
 
