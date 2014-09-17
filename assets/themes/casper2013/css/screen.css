@@ -80,24 +80,6 @@ html {
   line-height: 1.5em;
 }
 
-body {
-  padding: 0 15px;
-}
-@media (min-width: 960px) {
-  body {
-    padding: 0;
-  }
-}
-
-.header {
-  margin: 0 -15px;
-}
-@media (min-width: 960px) {
-  .header {
-    margin: 0;
-  }
-}
-
 .container {
   max-width: 960px;
   margin-left: auto;
@@ -128,8 +110,8 @@ body {
   box-sizing: border-box;
   width: 100%;
   float: left;
-  padding-left: 1.0416666667%;
-  padding-right: 1.0416666667%;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 @media (min-width: 960px) {
   .content {
@@ -138,8 +120,8 @@ body {
     box-sizing: border-box;
     width: 75%;
     float: left;
-    padding-left: 1.0416666667%;
-    padding-right: 1.0416666667%;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -149,8 +131,8 @@ body {
   box-sizing: border-box;
   width: 100%;
   float: left;
-  padding-left: 1.0416666667%;
-  padding-right: 1.0416666667%;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 @media (min-width: 960px) {
   .aside {
@@ -159,8 +141,8 @@ body {
     box-sizing: border-box;
     width: 25%;
     float: right;
-    padding-left: 1.0416666667%;
-    padding-right: 1.0416666667%;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -322,7 +304,28 @@ body {
 
 .post-time {
   margin: 0 7.5px;
-  color: #0082D7;
+  color: #a6a6a6;
+}
+
+.tag-list {
+  margin-bottom: 0.75em;
+  margin-top: 0.75em;
+}
+
+.tag {
+  display: inline-block;
+  color: white;
+  background-color: #a6a6a6;
+  padding: 0 0.5em;
+  border: dashed 1px #8c8c8c;
+  border-radius: 2px;
+}
+.tag:hover, .tag:focus {
+  background-color: #999999;
+  color: white;
+}
+.tag + .tag {
+  margin-left: 0.5em;
 }
 
 .demo {
@@ -394,7 +397,8 @@ body {
 .header .container {
   position: relative;
   padding-top: 330px;
-  padding-left: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 @media (min-width: 960px) {
   .header .container {
@@ -402,13 +406,8 @@ body {
   }
 }
 .header .page-title {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 66.6666666667%;
-  float: left;
-  padding-left: 1.0416666667%;
-  padding-right: 1.0416666667%;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 0.75em;
   position: absolute;
   bottom: 0;
@@ -417,6 +416,17 @@ body {
   line-height: 1.5em;
   text-shadow: 0 3px 3px rgba(0, 0, 0, 0.16);
   color: white;
+}
+@media (min-width: 960px) {
+  .header .page-title {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 66.6666666667%;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .navigation {
@@ -440,15 +450,15 @@ body {
   right: 0;
   z-index: 3;
   text-align: right;
-  padding-left: 1.0416666667%;
-  padding-right: 1.0416666667%;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .navigation .main-menu {
   position: absolute;
   left: 0;
   top: 0;
-  padding-left: 1.0416666667%;
-  padding-right: 1.0416666667%;
+  padding-left: 10px;
+  padding-right: 10px;
   z-index: 3;
 }
 .navigation .drop-menu {
@@ -672,6 +682,6 @@ body {
   padding: 1.5em 0;
 }
 .footer .container {
-  padding-left: 1.0416666667%;
-  padding-right: 1.0416666667%;
+  padding-left: 10px;
+  padding-right: 10px;
 }

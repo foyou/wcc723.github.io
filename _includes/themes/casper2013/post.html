@@ -9,10 +9,10 @@
         {% endif %}
       </h2>
     </div>    
-    <div class="note post-info">
-      <a href="categories.html#{{ post.category }}-ref">{{ page.category }}</a>      
+    <div class="tag-list">
+      <a class="tag" href="categories.html#{{ post.category }}-ref">{{ page.category }}</a><time class="post-time">{{ page.date | date_to_long_string }}</time>  
     </div>
-    <time class="post-time">{{ page.date | date_to_long_string }}</time>
+    
     
   <hr>
     <div>
