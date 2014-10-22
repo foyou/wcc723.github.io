@@ -406,16 +406,18 @@ html {
   }
 }
 .header .page-title {
-  padding-left: 10px;
-  padding-right: 10px;
   padding-bottom: 0.75em;
   position: absolute;
   bottom: 0;
+  left: 0;
   z-index: 2;
   font-size: 2em;
   line-height: 1.5em;
   text-shadow: 0 3px 3px rgba(0, 0, 0, 0.16);
   color: white;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 @media (min-width: 960px) {
   .header .page-title {
@@ -512,6 +514,9 @@ html {
   text-shadow: 0 3px 3px rgba(0, 0, 0, 0.16);
   font-size: 2em;
   line-height: 1.5em;
+}
+.content h1 a {
+  color: black;
 }
 .content h1 {
   font-size: 2em;
@@ -651,6 +656,7 @@ html {
 }
 .content img {
   max-width: 100%;
+  height: auto;
 }
 
 .page-nav a {
