@@ -1,14 +1,26 @@
 
-<div class="content-wrap index">
-	<div class="content">
-		{{ content }}
+<div class="nav-tab">
+	<div class="container">
+		<ul>
+			<li class="selected"><a href="#post">New posts</a></li>
+			<li><a href="#archive">Posts list</a></li>
+		</ul>
+	</div>
+</div>
 
-		
+
+<div class="content-wrap index tab-content">
+
+	<div class="content tab-pane fade active in" id="post">
+		{{ content }}
 	</div>
 
-	<aside class="aside">
-
-		<!-- <gcse:search></gcse:search> -->
+	<div class="content tab-pane fade" id="archive">
+		{% assign posts_collate = site.posts %}
+		{% include JB/posts_collate %}
+	</div>
+	
+	<!-- <aside class="aside">
 
 		<h4>Recent Posts</h4>
 	    <ul class="recent-box">
@@ -23,5 +35,5 @@
 			{% include JB/tags_list %}
 		</ul>
 
-	</aside>
+	</aside> -->
 </div>

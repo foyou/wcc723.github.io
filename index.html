@@ -39,9 +39,9 @@ thumbnail: banner-01.png
  	{{ post.content | strip_html | truncatewords:100 }}
 {% endif %}
 
-<div class="read-more">
-<a class="btn " href="{{ BASE_PATH }}{{ post.url }}">Read more...</a>
-</div>
+	<div class="text-right">
+		<a href="{{ BASE_PATH }}{{ post.url }}" class="btn-bevel btn">Read more...</a>
+	</div>
 </article>
 </section>
 {% endfor %}
@@ -49,7 +49,9 @@ thumbnail: banner-01.png
 
 
 <!-- page nav-->
+<section class="section">
 <div class="page-nav">
   <a href="/archive.html">More</a>
 </div>
+</section>
 <!-- page nav end--> 
