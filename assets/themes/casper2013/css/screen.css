@@ -619,11 +619,23 @@ html {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 83.3333333333%;
+  width: 100%;
   float: left;
   padding-left: 10px;
   padding-right: 10px;
-  margin-left: 8.3333333333%;
+  margin-left: 0%;
+}
+@media (min-width: 960px) {
+  .index .content .section {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 83.3333333333%;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 8.3333333333%;
+  }
 }
 .index .content .section + .section {
   padding-top: 2.25em;
@@ -641,29 +653,18 @@ html {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 83.3333333333%;
+  width: 100%;
   float: left;
   padding-left: 10px;
   padding-right: 10px;
 }
-@media (min-width: 960px) {
-  .page .content .section {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 100%;
-    float: left;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-.page .content article > p, .page .content article > pre, .page .content article > ul, .page .content article > ol, .page .content article > blockquote, .page .content article > h2, .page .content article > h3, .page .content article > h4, .page .content article > h5, .page .content article > h6 {
+.page .content article > p, .page .content article > pre, .page .content article > ul, .page .content article > ol, .page .content article > blockquote, .page .content article > h2, .page .content article > h3, .page .content article > h4, .page .content article > h5, .page .content article > h6, .page .content article > hr {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 @media (min-width: 960px) {
-  .page .content article > p, .page .content article > pre, .page .content article > ul, .page .content article > ol, .page .content article > blockquote, .page .content article > h2, .page .content article > h3, .page .content article > h4, .page .content article > h5, .page .content article > h6 {
+  .page .content article > p, .page .content article > pre, .page .content article > ul, .page .content article > ol, .page .content article > blockquote, .page .content article > h2, .page .content article > h3, .page .content article > h4, .page .content article > h5, .page .content article > h6, .page .content article > hr {
     width: 83.3333333333%;
   }
 }
@@ -822,6 +823,9 @@ html {
 .content img {
   max-width: 100%;
   height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .pages {
