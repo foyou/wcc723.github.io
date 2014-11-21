@@ -8,6 +8,7 @@
 
     <!-- Enable responsive viewport -->
     <meta name="viewport" content="initial-scale=1.0, width=device-width, maximum-scale=1, minimum-scale=1" />
+    <meta property="fb:app_id" content="{{ site.JB.comments.facebook.appid }}" />
     <meta content="{{ site.JB.comments.facebook.fbadmin }}" property="fb:admins" />
     <meta property="og:title" content="{{ page.cTitle }}"/>
     <meta property="og:type" content="blog"/>
@@ -95,5 +96,23 @@
 </body>
 {% include JB/analytics %}
 
-{% include JB/googleSearch %}  
+{% include JB/googleSearch %} 
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '{{ site.JB.comments.facebook.appid }}',
+      xfbml      : true,
+      version    : 'v2.2'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script> 
 </html>
