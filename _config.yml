@@ -89,6 +89,7 @@ JB :
     intensedebate :
       account : 123abc
     facebook :
+      fbadmin: 100000199539632
       appid : 100000199539632
       num_posts: 5
       width: 580
